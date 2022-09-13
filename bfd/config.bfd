@@ -1474,6 +1474,12 @@ case "${targ}" in
     ;;
 #endif
 
+  i386-*-memo*)
+    targ_defvec=i386_elf32_vec
+    targ_selvecs=
+    targ64_selvecs="x86_64_elf64_vec"
+    ;;
+
 # END OF targmatch.h
   bpf-*-*)
     echo "*** Configuration $targ is not fully supported." >&2

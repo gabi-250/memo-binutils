@@ -410,6 +410,10 @@ i[3-7]86-*-freebsd* | i[3-7]86-*-kfreebsd*-gnu)
 i[3-7]86-*-gnu*)	targ_emul=elf_i386
 			targ_extra_emuls=elf_iamcu
 			;;
+i[3-7]86-*-memo*)	targ_emul=elf_i386_memo
+			targ_extra_emuls=elf_i386
+			targ64_extra_emuls="elf_x86_64_memo elf_x86_64"
+			;;
 i[3-7]86-*-msdos*)	targ_emul=i386msdos
 			targ_extra_emuls=i386aout
 			targ_extra_ofiles=

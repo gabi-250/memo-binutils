@@ -370,7 +370,8 @@ ALL_EMULATION_SOURCES = \
 	exgateelf.c \
 	ez80.c \
 	ez8001.c \
-	ez8002.c
+	ez8002.c \
+	eelf_i386_memo.c
 
 ALL_EMULATIONS = $(ALL_EMULATION_SOURCES:.c=.@OBJEXT@)
 
@@ -772,6 +773,7 @@ $(ALL_EMULATION_SOURCES) $(ALL_64_EMULATION_SOURCES): $(GEN_DEPENDS)
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eelf_i386_ldso.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eelf_i386_sol2.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eelf_i386_vxworks.Pc@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eelf_i386_memo.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eelf_iamcu.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eelf_s390.Pc@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eh8300elf.Pc@am__quote@
